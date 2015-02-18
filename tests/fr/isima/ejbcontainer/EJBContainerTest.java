@@ -1,5 +1,7 @@
 package fr.isima.ejbcontainer;
 
+import fr.isima.ejbcontainer.errorTestClasses.IBarBean;
+import fr.isima.ejbcontainer.exceptions.IncoherentAnnotationsUsage;
 import fr.isima.ejbcontainer.normalTestClasses.BeanInterface;
 import org.junit.Test;
 
@@ -17,5 +19,10 @@ public class EJBContainerTest {
     public void testSingletonBeanProxyCreation(){
         BeanInterface bean = EJBContainer.getInstance().createBean(BeanInterface.class);
         assertNotNull(bean);
+    }
+
+    @Test(expected = IncoherentAnnotationsUsage.class)
+    public void testIncoherentAnnotationsUsage(){
+        EJBContainer.getInstance().createBean(IBarBean.class);
     }
 }

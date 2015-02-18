@@ -3,7 +3,7 @@ package fr.isima.ejbcontainer.errorTestClasses;
 import fr.isima.ejbcontainer.annotations.Singleton;
 
 @Singleton
-public class AnOtherSingletonBean implements AnOtherBeanInterface{
+public class FooSingletonImpl implements IFooBean {
     @Override
     public void buisinessMethod() {
 

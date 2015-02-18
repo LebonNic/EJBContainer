@@ -1,7 +1,7 @@
 package fr.isima.ejbcontainer.utils;
 
 import fr.isima.ejbcontainer.errorTestClasses.AnNonImplementedInterface;
-import fr.isima.ejbcontainer.errorTestClasses.AnOtherBeanInterface;
+import fr.isima.ejbcontainer.errorTestClasses.IFooBean;
 import fr.isima.ejbcontainer.exceptions.ImplementationNotFound;
 import fr.isima.ejbcontainer.exceptions.MultipleImplementationsFound;
 import fr.isima.ejbcontainer.normalTestClasses.BeanInterface;
@@ -18,7 +18,7 @@ public class ImplementationFinderTest {
 
     @Test(expected = MultipleImplementationsFound.class)
     public void testToFindDuplicateImplementations(){
-        ImplementationFinder.getImplementationForInterface(AnOtherBeanInterface.class);
+        ImplementationFinder.getImplementationForInterface(IFooBean.class);
     }
 
     @Test(expected = ImplementationNotFound.class)
