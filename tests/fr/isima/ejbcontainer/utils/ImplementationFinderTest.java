@@ -4,7 +4,7 @@ import fr.isima.ejbcontainer.errorTestClasses.AnNonImplementedInterface;
 import fr.isima.ejbcontainer.errorTestClasses.IFooBean;
 import fr.isima.ejbcontainer.exceptions.ImplementationNotFound;
 import fr.isima.ejbcontainer.exceptions.MultipleImplementationsFound;
-import fr.isima.ejbcontainer.normalTestClasses.BeanInterface;
+import fr.isima.ejbcontainer.normalTestClasses.IBean;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class ImplementationFinderTest {
     @Test
     public void testToFindImplementation(){
-        Class<? extends BeanInterface> clazz = ImplementationFinder.getImplementationForInterface(BeanInterface.class);
+        Class<? extends IBean> clazz = ImplementationFinder.getImplementationForInterface(IBean.class);
         assertNotNull(clazz);
     }
 
