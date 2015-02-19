@@ -12,11 +12,11 @@ public class BusinessServices {
     @EJB
     protected IBean anEJBWithProtectedAccessibility = null;
 
-    public IBean getPrivateEJB(){
+    public IBean getPrivateEJB() {
         return this.anEJBWithPrivateAccessibility;
     }
 
-    public IBean getProtectedEJB(){
+    public IBean getProtectedEJB() {
         return this.anEJBWithProtectedAccessibility;
     }
 }

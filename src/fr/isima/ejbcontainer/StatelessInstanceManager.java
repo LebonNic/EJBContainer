@@ -1,6 +1,7 @@
 package fr.isima.ejbcontainer;
 
 import fr.isima.ejbcontainer.exceptions.StatelessBeanInstantiationFailed;
+import fr.isima.ejbcontainer.exceptions.StatelessBeanReleaseFailed;
 import fr.isima.ejbcontainer.utils.ImplementationFinder;
 
 import java.util.HashMap;
@@ -57,9 +58,9 @@ public class StatelessInstanceManager implements InstanceManager {
         if (implementationPool != null) {
             implementationPool.push(bean);
         } else {
-            //TODO throw an exception
+            throw new StatelessBeanReleaseFailed("Failed to release a bean of type: \"" + bean.getClass().getName()
+                    + "\". A bean can only be released if it has bean given by the \"getInstance\" method.");
         }
-
     }
 
     public Stack<Object> getImplementationPool(Class<?> beanInterface) {
