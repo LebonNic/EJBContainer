@@ -2,11 +2,11 @@ package fr.isima.ejbcontainer.exceptions;
 
 public class MultipleImplementationsFound extends RuntimeException {
 
-    public MultipleImplementationsFound(){
+    public MultipleImplementationsFound() {
         super();
     }
 
-    public MultipleImplementationsFound(String message){
+    public MultipleImplementationsFound(String message) {
         super(message);
     }
 

@@ -1,8 +1,10 @@
 package fr.isima.ejbcontainer.errorTestClasses;
 
-/**
- * Created by LebonNic on 18/02/2015.
- */
+import fr.isima.ejbcontainer.annotations.Singleton;
+import fr.isima.ejbcontainer.annotations.Stateless;
+
+@Stateless
+@Singleton
 public class BarImplWithIncoherentAnnotationsUsage implements IBarBean {
     @Override
     public void buisinessMethod() {

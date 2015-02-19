@@ -19,13 +19,19 @@ public class EJBContainer {
 
     private static EJBContainer container = null;
     private SingletonInstanceManager singletonManager = null;
+    private StatelessInstanceManager statelessManager = null;
 
     private EJBContainer() {
         this.singletonManager = new SingletonInstanceManager();
+        this.statelessManager = new StatelessInstanceManager();
     }
 
     public SingletonInstanceManager getSingletonInstanceManager() {
         return this.singletonManager;
+    }
+
+    public StatelessInstanceManager getStatelessInstanceManager() {
+        return this.statelessManager;
     }
 
     public static EJBContainer getInstance() {
@@ -47,11 +53,12 @@ public class EJBContainer {
     }
 
     public <T> void manage(T object) {
-        LOG.log(Level.INFO, "Injecting EJBs in the object \"{0}\".", object.getClass().getName());
         Set<Field> ejbAnnotatedFields = ReflectionUtils.getAllFields(object.getClass(),
                 ReflectionUtils.withAnnotation(EJB.class));
 
         for (Field field : ejbAnnotatedFields) {
+            LOG.log(Level.INFO, "Injecting an EJB in the field \"" + field.getName() + "\" of the object \"" +
+                    object.getClass().getName() + "\".");
             Object beanToInject = createBean(field.getType());
             boolean isAccessible = field.isAccessible();
 
@@ -77,7 +84,7 @@ public class EJBContainer {
         if (isSingleton && !isStateless) {
             proxy = Reflection.newProxy(beanInterface, new InvocationHandler(this.singletonManager, beanInterface));
         } else if (!isSingleton && isStateless) {
-            //TODO create a proxy linked to a StatelessInstanceManager
+            proxy = Reflection.newProxy(beanInterface, new InvocationHandler(this.statelessManager, beanInterface));
         } else if (isSingleton && isStateless) {
             throw new IncoherentAnnotationsUsage("An EJB can't have both @Singleton and @Stateless annotations.");
         }

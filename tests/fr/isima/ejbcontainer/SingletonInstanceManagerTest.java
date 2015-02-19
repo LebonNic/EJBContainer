@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class SingletonInstanceManagerTest {
 
     @Test
-    public void testSingletonBeanCreation(){
+    public void testSingletonBeanCreation() {
         IBean bean = EJBContainer.getInstance().createBean(IBean.class);
         bean.businessMethod();
         bean.businessMethod();

@@ -1,5 +1,5 @@
 package fr.isima.ejbcontainer.normalTestClasses;
 
-public interface IBean {
+public interface IBazBean {
     public void businessMethod();
 }

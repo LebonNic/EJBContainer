@@ -14,7 +14,6 @@ import org.reflections.Reflections;
 
 public class ImplementationFinder {
     private static final Logger LOG = Logger.getLogger(ImplementationFinder.class.getName());
-
     private static Map<Class<?>, Class<?>> interfaceToClass = new HashMap<>();
 
     private static <T> Class<? extends T> findImplementationForInterface(Class<T> beanInterface) {
@@ -46,15 +45,14 @@ public class ImplementationFinder {
         return (Class<? extends T>) implementation;
     }
 
-    public static <T> Class<? extends T> getImplementationForInterface(Class<T> beanInterface){
+    public static <T> Class<? extends T> getImplementationForInterface(Class<T> beanInterface) {
         LOG.log(Level.INFO, "Searching implementations for interface \"{0}\"...", beanInterface.getName());
         Class<? extends T> clazz = (Class<? extends T>) ImplementationFinder.interfaceToClass.get(beanInterface);
 
-        if(clazz == null){
+        if (clazz == null) {
             clazz = ImplementationFinder.findImplementationForInterface(beanInterface);
             ImplementationFinder.interfaceToClass.put(beanInterface, clazz);
-        }
-        else {
+        } else {
             LOG.log(Level.INFO, "The finder uses the HashMap to get the matching implementation faster.");
         }
 
