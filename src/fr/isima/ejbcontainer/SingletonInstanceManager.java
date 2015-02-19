@@ -1,6 +1,7 @@
 package fr.isima.ejbcontainer;
 
 import fr.isima.ejbcontainer.annotations.Singleton;
+import fr.isima.ejbcontainer.exceptions.SingletonInstantiationFailed;
 import fr.isima.ejbcontainer.utils.ImplementationFinder;
 
 import java.util.HashMap;
@@ -12,7 +13,6 @@ public class SingletonInstanceManager implements InstanceManager {
 
     @Override
     public <T> T getInstance(Class<T> beanInterface) {
-
         T bean = (T) this.interfaceToImplementation.get(beanInterface);
 
         if(bean == null){
@@ -21,10 +21,11 @@ public class SingletonInstanceManager implements InstanceManager {
                     Class<? extends T> clazz = ImplementationFinder.getImplementationForInterface(beanInterface);
                     try {
                         bean = clazz.newInstance();
-                        //TODO manage the recursive @EJB annotations
+                        EJBContainer.getInstance().manage(bean);
                         this.interfaceToImplementation.put(clazz, bean);
                     } catch (InstantiationException | IllegalAccessException e) {
-                        e.printStackTrace();
+                        throw new SingletonInstantiationFailed("Failed to instantiate the singleton bean named: \"" +
+                                clazz.getName() + "\". Detail explanations: " + e.getMessage() + ".");
                     }
                 }
                 else {

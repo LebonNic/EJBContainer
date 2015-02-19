@@ -11,6 +11,7 @@ public class SingletonInstanceManagerTest {
     public void testSingletonBeanCreation(){
         IBean bean = EJBContainer.getInstance().createBean(IBean.class);
         bean.businessMethod();
+        bean.businessMethod();
         assertEquals(EJBContainer.getInstance().getSingletonInstanceManager().getInstanceCount(), 1);
     }
 }

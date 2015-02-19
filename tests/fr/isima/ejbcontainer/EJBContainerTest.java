@@ -2,6 +2,7 @@ package fr.isima.ejbcontainer;
 
 import fr.isima.ejbcontainer.errorTestClasses.IBarBean;
 import fr.isima.ejbcontainer.exceptions.IncoherentAnnotationsUsage;
+import fr.isima.ejbcontainer.normalTestClasses.BusinessServices;
 import fr.isima.ejbcontainer.normalTestClasses.IBean;
 import org.junit.Test;
 
@@ -24,5 +25,15 @@ public class EJBContainerTest {
     @Test(expected = IncoherentAnnotationsUsage.class)
     public void testIncoherentAnnotationsUsage(){
         EJBContainer.getInstance().createBean(IBarBean.class);
+    }
+
+    @Test
+    public void testEJBInjection(){
+        BusinessServices services = new BusinessServices();
+        EJBContainer.getInstance().manage(services);
+
+        assertNotNull(services.anEJBWithPublicAccessibility);
+        assertNotNull(services.getProtectedEJB());
+        assertNotNull(services.getPrivateEJB());
     }
 }

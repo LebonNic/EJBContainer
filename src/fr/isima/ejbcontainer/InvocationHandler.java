@@ -1,10 +1,10 @@
 package fr.isima.ejbcontainer;
 
 import com.google.common.reflect.AbstractInvocationHandler;
+import fr.isima.ejbcontainer.exceptions.MethodInvocationFailed;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,13 +24,13 @@ public class InvocationHandler extends AbstractInvocationHandler {
                 new Object[]{method.getName(), this.beanInterface.getName(), args.toString()});
 
         Object bean = instanceManager.getInstance(this.beanInterface);
-        Object result = null;
+        Object result;
 
         try {
             result = method.invoke(bean, args);
         } catch (IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-            //TODO Throw EJBInvocationException
+            throw new MethodInvocationFailed("An error occurred during the call of the method \"" + method.getName()
+                    + "\" from \"" + this.beanInterface + "\". Detail explanations: " + e.getMessage() + ".");
         }
 
         return result;
