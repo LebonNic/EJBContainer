@@ -39,7 +39,7 @@ public class TransactionManagerImpl implements TransactionManager{
         Stack<Transaction> transactionStack = getTransactionStackForCurrentThread();
 
         if(transactionStack == null){
-            LOG.log(Level.INFO, "Creating a new transactions stack for the thread " + threadId + ".");
+            LOG.log(Level.INFO, "Creating a new transaction stack for the thread " + threadId + ".");
             transactionStack = new Stack<>();
             this.threadToTransactionStack.put(threadId, transactionStack);
         }
@@ -87,6 +87,11 @@ public class TransactionManagerImpl implements TransactionManager{
             }
         }
         return transaction;
+    }
+
+    @Override
+    public Stack<Transaction> getCurrentTransactionStack(){
+        return getTransactionStackForCurrentThread();
     }
 
     private Stack<Transaction> getTransactionStackForCurrentThread(){
