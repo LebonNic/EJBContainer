@@ -15,6 +15,7 @@ public class EJBContainerTest {
     public void testEJBContainerCreation() {
         assertNotNull(EJBContainer.getInstance().getSingletonInstanceManager());
         assertNotNull(EJBContainer.getInstance().getStatelessInstanceManager());
+        assertNotNull(EJBContainer.getInstance().getEntityManagerFactory());
     }
 
     @Test

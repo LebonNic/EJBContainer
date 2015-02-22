@@ -27,7 +27,7 @@ public class RuntimeTransactionManagementTest {
     }
 
     @Test
-    public void testRequiresNewTransactionMethods(){
+    public void testRequiresNewTransactionMethod(){
         int initialTransactionCount, finalTransactionCount;
         IBean bean = EJBContainer.getInstance().createBean(IBean.class);
 
