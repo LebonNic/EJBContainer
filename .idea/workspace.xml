@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="908acecb-dbe7-46d5-868c-a2c8b0c3c47f" name="Default" comment="Adds unit tests">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/utils/BeanOperationManagerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/RuntimePersistenceTest.java" />
-      <change type="MOVED" beforePath="C:\Users\LebonNic\Documents\GitHub\EJBContainer\tests\fr\isima\ejbcontainer\normalTestClasses\businessServices.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/BusinessServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/EntityManagerFactoryTest.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/EntityManagerFactoryTest.java" />
+    <list default="true" id="908acecb-dbe7-46d5-868c-a2c8b0c3c47f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java" afterPath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/INorfBean.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/INorfBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/PersistCommand.java" afterPath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/PersistCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/RemoveCommand.java" afterPath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/RemoveCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/transaction/RuntimeTransactionManagementTest.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/transaction/RuntimeTransactionManagementTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessNorfBeanImpl.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessNorfBeanImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/transaction/TransactionImpl.java" afterPath="$PROJECT_DIR$/src/fr/isima/ejbcontainer/transaction/TransactionImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/transaction/TransactionManagerTest.java" afterPath="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/transaction/TransactionManagerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EJBContainer.iws" />
@@ -43,8 +32,8 @@
       <file leaf-file-name="EntityManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="612">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessServices.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BusinessServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/BusinessServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7545126" vertical-offset="126" max-vertical-offset="680">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,34 +107,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManager.java">
+      <file leaf-file-name="RuntimePersistenceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/RuntimePersistenceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/RemoveCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="561">
-              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.65611815" vertical-offset="216" max-vertical-offset="765">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/transaction/TransactionManagerImpl.java">
+      <file leaf-file-name="StatelessBazBeanImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessBazBeanImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1972">
-              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonInstanceManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/SingletonInstanceManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="816">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -206,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/fr/isima/ejbcontainer/utils/BeanOperationManager.java" />
         <option value="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/command/Command.java" />
         <option value="$PROJECT_DIR$/src/fr/isima/ejbcontainer/transaction/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java" />
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/BusinessServices.java" />
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/errorTestClasses/EntityManagerTest.java" />
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/errorTestClasses/EntityManagerTestDuplicate.java" />
@@ -220,6 +207,7 @@
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/INorfBean.java" />
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessNorfBeanImpl.java" />
         <option value="$PROJECT_DIR$/tests/fr/isima/ejbcontainer/utils/BeanOperationManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -572,7 +560,7 @@
       <recent name="fr.isima.ejbcontainer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeanOperationManagerTest.testPostContructCall">
+  <component name="RunManager" selected="JUnit.RuntimePersistenceTest.testEntityManagerPersistence">
     <configuration default="false" name="All in EJBContainer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="EJBContainer" />
@@ -965,10 +953,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BeanOperationManagerTest.testPostContructCall" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RuntimePersistenceTest.testEntityManagerPersistence" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.All in EJBContainer" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionManagerTest.testHistoryOfCommandsManagement" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RuntimePersistenceTest.testEntityManagerPersistence" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BeanOperationManagerTest.testPostContructCall" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionManagerTest.testHistoryOfCommandsManagement" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.EntityManagerFactoryTest.testCreateAnEntityManagerWithAnImaginaryUnitName" />
       </list>
     </recent_temporary>
@@ -988,7 +976,7 @@
       <workItem from="1424510674785" duration="18655000" />
       <workItem from="1424598168632" duration="1529000" />
       <workItem from="1424600461160" duration="12792000" />
-      <workItem from="1424675254693" duration="3594000" />
+      <workItem from="1424675254693" duration="4463000" />
     </task>
     <task id="LOCAL-00001" summary="Update .gitignore">
       <created>1424354720051</created>
@@ -1044,11 +1032,17 @@
       <option name="project" value="LOCAL" />
       <updated>1424641112778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adds unit tests">
+      <created>1424678865266</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1424678865266</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46604000" />
+    <option name="totallyTimeSpent" value="47473000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1072,12 +1066,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22628571" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1085,7 +1079,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42057142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42057142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23101604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1251,14 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessBazBeanImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/SingletonQuxBeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
@@ -1395,14 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/SingletonInstanceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/EJBContainerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
@@ -1425,16 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/RuntimePersistenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="765">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1558,16 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessNorfBeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="765">
@@ -1588,8 +1546,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/BusinessServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7545126" vertical-offset="126" max-vertical-offset="680">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/normalTestClasses/StatelessBazBeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/SingletonInstanceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="816">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/isima/ejbcontainer/persistence/EntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="612">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fr/isima/ejbcontainer/persistence/RuntimePersistenceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65611815" vertical-offset="216" max-vertical-offset="765">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
