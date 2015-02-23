@@ -15,9 +15,9 @@ public class RuntimeTransactionManagementTest {
         int initialTransactionCount, finalTransactionCount;
         IBazBean bean = EJBContainer.getInstance().createBean(IBazBean.class);
 
-        initialTransactionCount = TransactionImpl.instanceCount;
+        initialTransactionCount = TransactionImpl.getInstanceCount();
         bean.businessMethod();
-        finalTransactionCount = TransactionImpl.instanceCount;
+        finalTransactionCount = TransactionImpl.getInstanceCount();
 
         TransactionManager transactionManager = TransactionManagerImpl.getInstance();
         assertNotNull(transactionManager);
@@ -31,9 +31,9 @@ public class RuntimeTransactionManagementTest {
         int initialTransactionCount, finalTransactionCount;
         IBean bean = EJBContainer.getInstance().createBean(IBean.class);
 
-        initialTransactionCount = TransactionImpl.instanceCount;
+        initialTransactionCount = TransactionImpl.getInstanceCount();
         bean.businessMethod();
-        finalTransactionCount = TransactionImpl.instanceCount;
+        finalTransactionCount = TransactionImpl.getInstanceCount();
 
         TransactionManager transactionManager = TransactionManagerImpl.getInstance();
         assertNotNull(transactionManager);

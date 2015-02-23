@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TransactionImpl implements Transaction{
 
-    public static int instanceCount = 0;
+    private static int instanceCount = 0;
     private List<Command> historyOfCommands;
 
     public TransactionImpl(){
@@ -31,5 +31,13 @@ public class TransactionImpl implements Transaction{
     public void storeAndExecuteCommand(Command command) {
         command.execute();
         this.historyOfCommands.add(command);
+    }
+
+    public static int getInstanceCount(){
+        return TransactionImpl.instanceCount;
+    }
+
+    public int getHistoryOfCommandCount(){
+        return this.historyOfCommands.size();
     }
 }
